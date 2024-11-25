@@ -1,6 +1,7 @@
 {
   "name": "test-turbo",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -19,5 +20,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "esbuild": "^0.24.0"
+  }
 }
